@@ -1,4 +1,6 @@
-const userInput = prompt("Enter your name");
-
-console.log(userInput);
-document.querySelector("h1").innerHTML = `Hello ${userInput}`;
+// input field variable (where user types)
+let userInput = document.querySelector("#input-box");
+// submit button variable
+const submitButton = document.querySelector("#submit-button");
+// output paragraph (show user content here)
+const displayUserInput = document.querySelector("#display-input");
