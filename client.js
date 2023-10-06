@@ -20,3 +20,11 @@ clearButton.addEventListener("click", function () {
   //  clear the displayUserInput box
   displayUserInput.textContent = "";
 });
+
+// ----------------------- COUNTER ----------------------- //
+
+// Create counter variable that can be shown on the page and added to or subtracted from
+
+// Create a function that can add to the variable by 1
+
+// Create a function that can subtract from the variable by 1
