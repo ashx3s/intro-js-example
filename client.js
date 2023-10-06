@@ -47,7 +47,7 @@ function decreaseCount() {
     displayCount.innerHTML = count;
   }
 }
-
+// add functions to buttons
 increaseButton.addEventListener("click", function () {
   increaseCount();
 });
