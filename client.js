@@ -24,7 +24,34 @@ clearButton.addEventListener("click", function () {
 // ----------------------- COUNTER ----------------------- //
 
 // Create counter variable that can be shown on the page and added to or subtracted from
-
+let count = 0;
+const displayCount = document.querySelector("#count");
+const increaseButton = document.querySelector("#increase-count");
+const decreaseButton = document.querySelector("#decrease-count");
 // Create a function that can add to the variable by 1
+function increaseCount() {
+  // if the number is less than 10
+  if (count < 10) {
+    // change the count variable
+    count++;
+    // update the DOM
+    displayCount.innerHTML = count;
+  }
+}
 
 // Create a function that can subtract from the variable by 1
+function decreaseCount() {
+  // if the number is above 0
+  if (count > 0) {
+    count--;
+    displayCount.innerHTML = count;
+  }
+}
+
+increaseButton.addEventListener("click", function () {
+  increaseCount();
+});
+
+decreaseButton.addEventListener("click", function () {
+  decreaseCount();
+});
